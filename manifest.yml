@@ -1,0 +1,9 @@
+---
+applications:
+  - name: pharmaMicroService
+    buildpack: java-buildpack
+    path: target/PredixMicroService-0.0.1-SNAPSHOT.jar
+    memory: 512M
+    timeout : 180
+env:
+   SPRING_PROFILES_ACTIVE : cloud    
